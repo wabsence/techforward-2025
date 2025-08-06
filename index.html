@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechForward 2025: The premier technology innovation conference in Austin, Texas">
+    <title>TechForward 2025 | The Future of Innovation</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section with Background Image -->
+    <header class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>TechForward 2025</h1>
+            <p class="subtitle">The Future of Innovation</p>
+            <p class="date-location">October 20-22, 2025 | Austin Convention Center, Texas</p>
+            <a href="#register" class="cta-button">Register Interest</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About the Conference</h2>
+            <p>TechForward 2025 brings together the brightest minds in AI, blockchain, IoT, and quantum computing. Network with industry leaders, attend hands-on workshops, and discover groundbreaking innovations.</p>
+            <div class="video-placeholder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers">
+        <div class="container">
+            <h2>Featured Speakers</h2>
+            <div class="speaker-grid">
+                <div class="speaker">
+                    <img src="./images/speaker1.jpg" alt="Dr. Jane Smith, AI Researcher">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>AI Researcher, TechGenius Labs</p>
+                </div>
+                <div class="speaker">
+                    <img src="./images/speaker1.jpg" alt="Mark Johnson, CEO of FutureBlock">
+                    <h3>Mark Johnson</h3>
+                    <p>CEO, FutureBlock</p>
+                </div>
+                <div class="speaker">
+                    <img src="./images/speaker1.jpg" alt="Sarah Lee, Lead Engineer at QuantumX">
+                    <h3>Sarah Lee</h3>
+                    <p>Lead Engineer, QuantumX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <div class="container">
+            <h2>Event Schedule</h2>
+            <div class="day">
+                <h3>Day 1: October 20</h3>
+                <ul>
+                    <li><strong>9:00 AM</strong> - Opening Keynote</li>
+                    <li><strong>11:00 AM</strong> - AI & Machine Learning Panel</li>
+                    <li><strong>2:00 PM</strong> - Blockchain Workshop</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Day 2: October 21</h3>
+                <ul>
+                    <li><strong>9:00 AM</strong> - Quantum Computing Breakthroughs</li>
+                    <li><strong>1:00 PM</strong> - Startup Pitch Competition</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form (Netlify) -->
+    <section id="register" class="registration">
+        <div class="container">
+            <h2>Register Your Interest</h2>
+            <p>Get early access to tickets and updates!</p>
+            <form name="interest-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="interest-form">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label>Interested In:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="ai" name="interest" value="AI">
+                        <label for="ai">AI & Machine Learning</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="blockchain" name="interest" value="Blockchain">
+                        <label for="blockchain">Blockchain</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="iot" name="interest" value="IoT">
+                        <label for="iot">Internet of Things</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="questions">Questions or Special Requests</label>
+                    <textarea id="questions" name="questions"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Austin Convention Center<br>500 E Cesar Chavez St<br>Austin, TX 78701</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>info@techforward2025.com<br>(555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 TechForward. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
